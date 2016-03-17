@@ -60,7 +60,7 @@ public class Serializer {
 
         final StringBuilder builder = new StringBuilder("");
         for(PotionEffect effect : effects)
-            builder.append(effect.getType().toString() + ':' + effect.getDuration() + ':' + effect.getAmplifier() + ':' + effect.isAmbient() + ';');
+            builder.append(effect.getType().getName() + ':' + effect.getDuration() + ':' + effect.getAmplifier() + ':' + effect.isAmbient() + ';');
         return builder.toString();
     }
 
